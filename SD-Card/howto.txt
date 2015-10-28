@@ -1,0 +1,13 @@
+1. insert sd card
+
+Note : Check your sd card directory
+	
+a. run "ls /dev/sd*" command before and after inserting sd card
+	
+b. Check what is the name of the directory - it may be "sdb" or "sdc"
+
+2. run following command
+	
+>> sudo dd if=/dev/zero of=/dev/sdc bs=512 count=20
+3. 
+run ./prepare-card.sh /dev/sdc
